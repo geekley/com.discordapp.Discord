@@ -23,7 +23,8 @@
         "--env=XDG_CURRENT_DESKTOP=Unity",
         "--talk-name=org.freedesktop.portal.Fcitx",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--talk-name=com.canonical.AppMenu.Registrar"
+        "--talk-name=com.canonical.AppMenu.Registrar",
+        "--talk-name=com.canonical.indicator.application"
     ],
     "modules": [
         {
