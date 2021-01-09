@@ -18,9 +18,7 @@ However, this sandboxing prevents the following features from working:
 
 - **Game Activity**: This flatpak version of Discord cannot scan running processes to detect running games.  
   There is currently no workaround or solution for this limitation.
-- **Unrestricted File Access**: Default sandbox permissions limit Discord to only certain directories, so you can't access your entire Home directory. Currently, this limits which file directories you can attach files from and impacts drag and drop functionality.  
-  This limitation will likely be overcomed eventually, when Zypak give us a file picker portal which will allow full access to the filesystem while still restricting unauthorized access.  
-  To work around this now, you can change sandbox permissions of installed flatpak applications (for example, with [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) or with `flatpak override --user --filesystem=home com.discordapp.Discord`) to give Discord broader file system access, allowing file attachments from more locations.
+- **Drag and Drop Files**: To work around this now, you can change sandbox permissions of installed flatpak applications to give Discord file system access (for example, with [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) or with `flatpak override --user --filesystem=home:ro com.discordapp.Discord`).
 - **Rich Presence**: See [this page](https://github.com/flathub/com.discordapp.Discord/wiki/Rich-Precense-(discord-rpc)) if you want to expose Discord's rich presence interface for other applications.
 
 
