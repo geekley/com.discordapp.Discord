@@ -18,7 +18,12 @@ However, this sandboxing prevents the following features from working:
 
 - **Game Activity**: This flatpak version of Discord cannot scan running processes to detect running games.  
   There is currently no workaround or solution for this limitation.
-- **Drag and Drop Files**: To work around this now, you can change sandbox permissions of installed flatpak applications to give Discord file system access (for example, with [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) or with `flatpak override --user --filesystem=home:ro com.discordapp.Discord`).
+- **Drag and Drop Files**: To work around this now, you can change sandbox permissions of installed flatpak applications to give Discord file system access:
+
+```sh
+flatpak override --user --filesystem=home:ro com.discordapp.Discord
+```
+
 - **Rich Presence**: See [this page](https://github.com/flathub/com.discordapp.Discord/wiki/Rich-Precense-(discord-rpc)) if you want to expose Discord's rich presence interface for other applications.
 
 
